@@ -6,7 +6,6 @@ from ..models.mibo import Mibo
 from django.contrib import admin
 
 
-
 admin.site.register(Camera)
 
 admin.site.register(Equipamento)
@@ -14,6 +13,3 @@ admin.site.register(Equipamento)
 admin.site.register(gravador)
 
 admin.site.register(Mibo)
-
-
-

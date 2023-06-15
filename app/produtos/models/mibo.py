@@ -9,7 +9,6 @@ from django.utils.translation import gettext as _
 ###
 
 class Mibo (models.Model):
-    sensor = models.CharField(max_length=100, verbose_name=_('Sensor'))
     obturador = models.CharField(max_length=100, verbose_name=_('Obturador'))
     lente = models.CharField(max_length=100, verbose_name=_('Lente'))
     angulo_visao = models.CharField(max_length=100, verbose_name=_('Angulo de Visão'))
