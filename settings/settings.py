@@ -37,7 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app.produtos',
+
+    # Apps
+    'app.camera',
+    'app.gravador',
+    'app.mibo',
+    'app.power_balum',
+    'app.speed_dome',
 ]
 
 MIDDLEWARE = [
