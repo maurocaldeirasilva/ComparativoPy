@@ -11,6 +11,6 @@ from django.urls import path, include
 ###
 
 
-# urlpatterns = [
-#     path('api/v1/', include('speed_dome.api.v1.urls'))
-# ]
+urlpatterns = [
+    path('api/v1/', include('app.speed_dome.api.v1.urls'))
+]

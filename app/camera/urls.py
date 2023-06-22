@@ -11,6 +11,6 @@ from django.urls import path, include
 ###
 
 
-# urlpatterns = [
-#     path('api/v1/', include('app.camera.api.v1.urls'))
-# ]
+urlpatterns = [
+    path('api/v1/', include('app.camera.api.v1.urls'))
+]
