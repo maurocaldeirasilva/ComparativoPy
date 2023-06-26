@@ -7,7 +7,7 @@ from django.utils.translation import gettext as _
 ###
 # Model
 ###
-class ImgPowerBalum(models.Model):
+class Imagem(models.Model):
     protocolos_de_video = models.CharField(max_length=100, verbose_name=_('Protocolos de Vídeo'))
     alcance_analógica = models.CharField(max_length=100, verbose_name=_('Alcance Analógica'))
     alcance_hdcvi = models.CharField(max_length=100, verbose_name=_('Alcance HDCVI'))

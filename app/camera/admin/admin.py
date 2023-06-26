@@ -1,13 +1,13 @@
-from ..models.geral_camera import GeralCamera
-from ..models.img_camera import ImagemCamera
-from ..models.rede import Rede
+from app.camera.models.geral import Geral
+from app.camera.models.imagem import Imagem
+from app.camera.models.camera import Camera
 
 
 from django.contrib import admin
 
 
-admin.site.register(GeralCamera)
+admin.site.register(Geral)
 
-admin.site.register(ImagemCamera)
+admin.site.register(Imagem)
 
-admin.site.register(Rede)
+admin.site.register(Camera)

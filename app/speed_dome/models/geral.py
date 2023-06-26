@@ -8,7 +8,7 @@ from django.utils.translation import gettext as _
 # Model
 ###
 
-class GeralSpeedDome(models.Model):
+class Geral(models.Model):
     dist_focal = models.CharField(max_length=100, verbose_name=_('Distância Focal'))
     zoom_optico = models.CharField(max_length=100, verbose_name=_('Zoom Óptico'))
     zoom_digital = models.CharField(max_length=100, verbose_name=_('Zoom Digital'))

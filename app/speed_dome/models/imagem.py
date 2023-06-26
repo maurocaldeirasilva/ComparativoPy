@@ -10,7 +10,7 @@ from django.utils.translation import gettext as _
 ###
 
 
-class ImagemCamera(models.Model):
+class Imagem(models.Model):
     compressao =  models.CharField(max_length=100, verbose_name=_('Compressão'))
     resolucao =  models.CharField(max_length=100, verbose_name=_('Resolução'))
     taxa_fps = models.CharField(max_length=100, verbose_name=_('Taxa de FPS'))

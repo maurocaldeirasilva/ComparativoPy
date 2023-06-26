@@ -7,7 +7,7 @@ from django.utils.translation import gettext as _
 ###
 # Model
 ###
-class GeralCamera(models.Model):
+class Geral(models.Model):
     alarme = models.CharField(max_length=100, verbose_name=_('Alarme'))
     temperatura = models.CharField(max_length=100, verbose_name=_('Temperatura'))
     ambiente_instalação = models.CharField(max_length=100, verbose_name=_('Ambiente de Instalação'))

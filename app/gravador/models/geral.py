@@ -9,7 +9,7 @@ from django.utils.translation import gettext as _
 # Model
 ###
 
-class GeralGravadores(models.Model):
+class Geral(models.Model):
     canais = models.CharField(max_length=100, verbose_name=_('Canais'))
     ips_adicionais = models.CharField(max_length=100, blank = True, null = True,verbose_name=_('IPs Adicionais'))
     modo_nvr = models.CharField(max_length=100, blank = True, null = True, verbose_name=_('Modo NVR'))

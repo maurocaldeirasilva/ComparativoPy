@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'app.mibo',
     'app.power_balum',
     'app.speed_dome',
+    'app.rede',
 ]
 
 MIDDLEWARE = [

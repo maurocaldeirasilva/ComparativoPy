@@ -1,14 +1,14 @@
-from ..models.geral_camera import GeralCamera
-from ..models.img_mibo import ImgMibo
+from ..models.geral import Geral
+from ..models.imagem import Imagem
 from ..models.mibo import Mibo
-from ..models.redes_mibo import RedesMibo
+from ..models.rede import Rede
 from django.contrib import admin
 
 
-admin.site.register(GeralCamera)
+admin.site.register(Geral)
 
-admin.site.register(ImgMibo)
+admin.site.register(Imagem)
 
-admin.site.register(RedesMibo)
+admin.site.register(Rede)
 
 admin.site.register(Mibo)

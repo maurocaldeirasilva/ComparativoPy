@@ -7,6 +7,6 @@ from django.utils.translation import gettext as _
 ###
 # Model
 ###
-class AudioGravador(models.Model):  
+class Audio(models.Model):  
     interface = models.CharField(max_length=100, verbose_name=_('Interface'))
     

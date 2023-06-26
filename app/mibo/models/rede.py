@@ -9,7 +9,7 @@ from django.utils.translation import gettext as _
 ###
 
 
-class RedesMibo(models.Model):
+class Rede(models.Model):
     rede_cabeada = models.CharField(
         max_length=100, verbose_name=_('Rede Cabeada'))
     padroes_wifi = models.CharField(

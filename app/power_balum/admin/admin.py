@@ -1,15 +1,18 @@
-from ..models.eletrica_power_balum import Eletrica
-from ..models.geral_power_balum import GeralPowerBalum
-from ..models.img_power_balum import ImgPowerBalum
-from ..models.rede import Rede
+from app.power_balum.models.eletrica import Eletrica
+from app.power_balum.models.geral import Geral
+from app.power_balum.models.imagem import Imagem
+from app.power_balum.models.power_balum import PowerBalum
+
 
 from django.contrib import admin
 
 
 admin.site.register(Eletrica)
 
-admin.site.register(GeralPowerBalum)
+admin.site.register(Geral)
 
-admin.site.register(ImgPowerBalum)
+admin.site.register(Imagem)
 
-admin.site.register(Rede)
+
+admin.site.register(PowerBalum)
+

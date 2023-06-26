@@ -8,7 +8,7 @@ from django.utils.translation import gettext as _
 # Model
 ###
 
-class ImgMibo(models.Model):
+class Imagem(models.Model):
     resolucao = models.CharField(max_length=100, verbose_name=_('Resolução'))
     resolucao_eco = models.CharField(max_length=100, verbose_name=_('Resolução ECO'))
     taxa_quadros = models.CharField(max_length=100, verbose_name=_('Taxa de Quadros'))

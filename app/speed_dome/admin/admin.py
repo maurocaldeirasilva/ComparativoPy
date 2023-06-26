@@ -1,12 +1,13 @@
-from ..models.geral_speed_dome import GeralSpeedDome
-from ..models.img_camera import ImagemCamera
-from ..models.rede import Rede
+from app.speed_dome.models.geral import Geral
+from app.speed_dome.models.imagem import Imagem
+from app.speed_dome.models.speed_dome import SpeedDome
 
 from django.contrib import admin
 
 
-admin.site.register(GeralSpeedDome)
+admin.site.register(Geral)
 
-admin.site.register(ImagemCamera)
+admin.site.register(Imagem)
 
-admin.site.register(Rede)
+
+admin.site.register(SpeedDome)

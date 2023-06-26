@@ -7,7 +7,7 @@ from django.utils.translation import gettext as _
 ###
 # Model
 ###
-class ImgGravador(models.Model):
+class Imagem(models.Model):
     resolucao_gravacao = models.CharField(max_length=100, verbose_name=_('Resolução de Gravação'))
     resolucao_visualizacao = models.CharField(max_length=100, verbose_name=_('Resolução de Visualização'))
     tela_adicional = models.CharField(max_length=100, verbose_name=_('Tela Adicional'))
