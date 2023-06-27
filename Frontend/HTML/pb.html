@@ -1,0 +1,190 @@
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../CSS/estilo-pb.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="img/isec.ico">
+	<script src="../JS/pb.js"></script>
+
+	<title>Tabela Comparativa Balum</title>
+</head>
+
+<body>
+	<div id="inicio">
+		<ul id="navegacao">
+			<li class="analogica"><a href="analógica.html">Analógica</a></li>
+			<li class="vip"><a href="vip.html">VIP </a></li>
+			<li class="sd"><a href="sd.html">Speed Dome</a></li>
+			<li class="dvr"><a href="dvr.html">DVR</a></li>
+			<li class="nvr"><a href="nvr.html">NVR</a></li>
+			<li class="pb"><a href="pb.html">Power Balum</a></li>
+			<li class="mibo"><a href="mibo.html">Mibo</a></li>
+		</ul>
+	</div>
+	<div id="limpar">
+		<img class="imglimp" src="img/limp.png">
+		<div><a href="pb.html" class="limpar">Limpar Filtros</a>
+		</div>
+	</div>
+	<aside>
+		<div id="inputs">
+			<div id="cabeca">
+				<a href=""></a>
+				<a href="index.html">
+					<img id="inputsimg" src="img/cftvip.png">
+				</a>
+			</div>
+
+			<div class="dropdown">
+				<button class="mainmenubtn">Série 1000</button>
+				<div class="dropdown-child">
+					<ul>
+						<li><input class="btn" id="rVB1001WP" type="checkbox"><label for="rVB1001WP"> VB 1001 WP</label>
+						</li>
+						<li><input class="btn" id="rVB1004WP" type="checkbox"><label for="rVB1004WP"> VB 1004 WP</label>
+						</li>
+						<li><input class="btn" id="rVB1008WP" type="checkbox"><label for="rVB1008WP"> VB 1008 WP</label>
+						</li>
+						<li><input class="btn" id="rVB1016WP" type="checkbox"><label for="rVB1016WP"> VB 1016 WP</label>
+						</li>
+						<li><input class="btn" id="rVB1104WP" type="checkbox"><label for="rVB1104WP"> VB 1104 WP</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<button class="mainmenubtn">Série 3000</button>
+				<div class="dropdown-child">
+					<ul>
+						<li><input class="btn" id="rVB3001WP" type="checkbox"><label for="rVB3001WP"> VB 3001 WP
+							</label></li>
+						<li><input class="btn" id="rVB3004WP" type="checkbox"><label for="rVB3004WP"> VB 3004 WP</label>
+						</li>
+						<li><input class="btn" id="rVB3008WP" type="checkbox"> <label for="rVB3001WP"> VB 3008
+								WP</label></li>
+						<li><input class="btn" id="rVB3016WP" type="checkbox"> <label for="rVB3016WP"> VB 3016
+								WP</label></li>
+						<li><input class="btn" id="rVB3016" type="checkbox"> <label for="rVB3016"> VB 3016 </label></li>
+						<li><input class="btn" id="rVB3104WP" type="checkbox"> <label for="rVB3104WP"> VB 3104 WP
+							</label></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<button class="mainmenubtn">Série 500</button>
+				<div class="dropdown-child">
+					<ul>
+						<li><input class="btn" id="rVB500P" type="checkbox"> <label for="rVB500P"> VB 500 P </label>
+						</li>
+						<li><input class="btn" id="rVB500PG2" type="checkbox"> <label for="rVB500PG2"> VB 500 P G2
+							</label></li>
+						<li><input class="btn" id="rVB501P" type="checkbox"> <label for="rVB501P"> VB 501 P </label>
+						</li>
+						<li><input class="btn" id="rVB501PG2" type="checkbox"> <label for="rVB501PG2"> VB 501 P
+								G2</label></li>
+						<li><input class="btn" id="rVB502B" type="checkbox"> <label for="rVB502B"> VB 502 B </label>
+						</li>
+						<li><input class="btn" id="rVB502BG2" type="checkbox"> <label for="rVB502BG2"> VB 502 B G2
+							</label></li>
+						<li><input class="btn" id="rVB503B" type="checkbox"> <label for="rVB503B"> VB 503 B </label>
+						</li>
+						<li><input class="btn" id="rVB503BG2" type="checkbox"> <label for="rVB503BG2"> VB 503 B
+								G2</label></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<section id="texto">
+		<h1>Tabela Comparativa Balum</h1>
+		<table id="tabela">
+			<thead>
+				<tr>
+					<td style="width: 300px; height: 180px;"><img src="img/logo.png" alt=""></td>
+				</tr>
+				<tr>
+					<td class="titulineo1">Especificações</td>
+				</tr>
+				<tr>
+					<td style="width: 300px;">Modelo</td>
+				</tr>
+				<tr>
+					<td class="titulineo1">Especificações</td>
+				</tr>
+			</thead>
+			<tr>
+				<td>Entrada Sinal de Vídeo</td>
+			</tr>
+			<tr>
+				<td>Saída de Vídeo</td>
+			</tr>
+			<tr>
+				<td>Função 4x1</td>
+			</tr>
+			<tr>
+				<td>Alimentação Câmera</td>
+			</tr>
+			<tr>
+				<td class="titulineo">Imagem</td>
+			</tr>
+			<tr>
+				<td>Protocolos de Vídeo</td>
+			</tr>
+			<tr>
+				<td>Alcance Analógica</td>
+			</tr>
+			<tr>
+				<td>Alcance HDCVI</td>
+			</tr>
+			<tr>
+				<td>Alcance HDTVI</td>
+			</tr>
+			<tr>
+				<td>Alcance AHD</Video></td>
+			</tr>
+			<tr>
+				<td>Filtro Ruído/Interferência</td>
+			</tr>
+			<tr>
+				<td class="titulineo">Características Complementares</td>
+			</tr>
+			<tr>
+				<td>Compatibilidade Dados</td>
+			</tr>
+			<tr>
+				<td>Compatibilidade Áudio</td>
+			</tr>
+			<tr>
+				<td class="titulineo">Elétrica</td>
+			</tr>
+			<tr>
+				<td>Alimentação</td>
+			</tr>
+			<tr>
+				<td>Corrente máxima</td>
+			</tr>
+			<tr>
+				<td>Consumo</td>
+			</tr>
+
+		</table>
+	</section>
+
+	<div id="rodape">
+		<p>Capacitação ISEC</p>
+	</div>
+
+
+</body>
+
+</html>

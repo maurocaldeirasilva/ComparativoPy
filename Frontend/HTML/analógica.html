@@ -1,0 +1,397 @@
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../CSS/estilo-analogica.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="img/isec.ico">
+	<script src="../JS/analogico.js"></script>
+
+	<title>Tabela Comparativa Analógica</title>
+</head>
+
+<body>
+	<div id="inicio">
+		<ul id="navegacao">
+			<li class="analogica"><a href="analógica.html">Analógica</a></li>
+			<li class="vip"><a href="vip.html">VIP </a></li>
+			<li class="sd"><a href="sd.html">Speed Dome</a></li>
+			<li class="dvr"><a href="dvr.html">DVR</a></li>
+			<li class="nvr"><a href="nvr.html">NVR</a></li>
+			<li class="pb"><a href="pb.html">Power Balum</a></li>
+			<li class="mibo"><a href="mibo.html">Mibo</a></li>
+		</ul>
+	</div>
+	<div id="limpar">
+		<img class="imglimp" src="img/limp.png">
+		<div><a href="analógica.html" class="limpar">Limpar Filtros</a>
+		</div>
+	</div>
+
+	<aside>
+		<div id="inputs">
+			<div id="cabeca">
+				<a href=""></a>
+				<a href="index.html">
+					<img id="inputsimg" src="img/multihd.png">
+				</a>
+			</div>
+
+			<div class="dropdown">
+				<button class="mainmenubtn">Série 1000</button>
+				<div class="dropdown-child">
+					<ul>
+						<li><input class="btn" id="rVHD1010B" type="checkbox"><label for="rVHD1010B">VHD 1010 B</label>
+						</li>
+						<li><input class="btn" id="rVHD1010D" type="checkbox"><label for="rVHD1010D">VHD 1010 D</label>
+						</li>
+						<li><input class="btn" id="rVHD1010BG3" type="checkbox"><label for="rVHD1010BG3">VHD 1010 B
+								G3</label></li>
+						<li><input class="btn" id="rVHD1010DG3" type="checkbox"><label for="rVHD1010DG3">VHD 1010 D
+								G3</label></li>
+						<li><input class="btn" id="rVHD1010BG4" type="checkbox"><label for="rVHD1010BG4">VHD 1010 B
+								G4</label></li>
+						<li><input class="btn" id="rVHD1010DG4" type="checkbox"><label for="rVHD1010DG4">VHD 1010 D
+								G4</label></li>
+						<li><input class="btn" id="rVHD1010BG5" type="checkbox"><label for="rVHD1010BG5">VHD 1010 B
+								G5</label></li>
+						<li><input class="btn" id="rVHD1010DG5" type="checkbox"><label for="rVHD1010DG5">VHD 1010 D
+								G5</label></li>
+						<li><input class="btn" id="rVHD1010BG6" type="checkbox"><label for="rVHD1010BG6">VHD 1010 B
+								G6</label></li>
+						<li><input class="btn" id="rVHD1010DG6" type="checkbox"><label for="rVHD1010DG6">VHD 1010 D
+								G6</label></li>
+						<li><input class="btn" id="rVHD1020D" type="checkbox"><label for="rVHD1010B">VHD 1020 D</label>
+						</li>
+						<li><input class="btn" id="rVHD1010BG3" type="checkbox"><label for="rVHD1010BG3">VHD 1010 B
+								G3</label></li>
+						<li><input class="btn" id="rVHD1010BG4" type="checkbox"><label for="rVHD1010BG4">VHD 1010 B
+								G4</label></li>
+						<li><input class="btn" id="rVHD1010BG5" type="checkbox"><label for="rVHD1010BG5">VHD 1010 B
+								G5</label></li>
+						<li><input class="btn" id="rVHD1010BG6" type="checkbox"><label for="rVHD1010BG6">VHD 1010 B
+								G6</label></li>
+						<li><input class="btn" id="rVHD1120B" type="checkbox"><label for="rVHD1120B">VHD 1120 B</label>
+						</li>
+						<li><input class="btn" id="rVHD1120D" type="checkbox"><label for="rVHD1120D">VHD 1120 D</label>
+						</li>
+						<li><input class="btn" id="rVHD1120BG2" type="checkbox"><label for="rVHD1120BG2">VHD 1120 B
+								G2</label></li>
+						<li><input class="btn" id="rVHD1120DG2" type="checkbox"><label for="rVHD1120DG2">VHD 1120 D
+								G2</label></li>
+						<li><input class="btn" id="rVHD1120BG3" type="checkbox"><label for="rVHD1120BG3">VHD 1120 B
+								G3</label></li>
+						<li><input class="btn" id="rVHD1120DG3" type="checkbox"><label for="rVHD1120DG3">VHD 1120 D
+								G3</label></li>
+						<li><input class="btn" id="rVHD1120BG4" type="checkbox"><label for="rVHD1120BG4">VHD 1120 B
+								G4</label></li>
+						<li><input class="btn" id="rVHD1120DG4" type="checkbox"><label for="rVHD1120DG4">VHD 1120 D
+								G4</label></li>
+						<li><input class="btn" id="rVHD1120BG5" type="checkbox"><label for="rVHD1120BG5">VHD 1120 B
+								G5</label></li>
+						<li><input class="btn" id="rVHD1120DG5" type="checkbox"><label for="rVHD1120DG5">VHD 1120 D
+								G5</label></li>
+						<li><input class="btn" id="rVHD1120BG6" type="checkbox"><label for="rVHD1120BG6">VHD 1120 B
+								G6</label></li>
+						<li><input class="btn" id="rVHD1120DG6" type="checkbox"><label for="rVHD1120DG6">VHD 1120 D
+								G6</label></li>
+						<li><input class="btn" id="rVHD1130BG7" type="checkbox"><label for="rVHD1130BG7">VHD 1130 B
+								G7</label></li>
+						<li><input class="btn" id="rVHD1220B" type="checkbox"><label for="rVHD1220B">VHD 1220 B</label>
+						</li>
+						<li><input class="btn" id="rVHD1220BG3" type="checkbox"><label for="rVHD1220BG3">VHD 1220 B
+								G3</label></li>
+						<li><input class="btn" id="rVHD1220BG4FullHD" type="checkbox"><label for="rVHD1220BG4FullHD">VHD
+								1220 B G4</label></li>
+						<li><input class="btn" id="rVHD1220BG5" type="checkbox"><label for="rVHD1220BG5">VHD 1220 B
+								G5</label></li>
+						<li><input class="btn" id="rVHD1220BG6" type="checkbox"><label for="rVHD1220BG6">VHD 1220 B
+								G6</label></li>
+						<li><input class="btn" id="rVHD1220Black" type="checkbox"><label for="rVHD1220Black">VHD 1220
+								Black</label></li>
+						<li><input class="btn" id="rVHD1220DBlack" type="checkbox"><label for="rVHD1220DBlack">VHD 1220
+								D Black</label></li>
+						<li><input class="btn" id="rVHD1220DFullColor" type="checkbox"><label
+								for="rVHD1220DFullColor">VHD 1220 D Full Color</label></li>
+						<li><input class="btn" id="rVHD1220DG3" type="checkbox"><label for="rVHD1220DG3">VHD 1220 D
+								G3</label></li>
+						<li><input class="btn" id="rVHD1220DG4FullHD" type="checkbox"><label for="rVHD1220DG4FullHD">VHD
+								1220 D G4</label></li>
+						<li><input class="btn" id="rVHD1220DG5" type="checkbox"><label for="rVHD1220DG5">VHD 1220 D
+								G5</label></li>
+						<li><input class="btn" id="rVHD1220FullColor" type="checkbox"><label for="rVHD1220FullColor">VHD
+								1220 FullColor</label></li>
+						<li><input class="btn" id="rVHD1420B" type="checkbox"><label for="rVHD1420B">VHD 1420 B</label>
+						</li>
+						<li><input class="btn" id="rVHD1420BG6" type="checkbox"><label for="rVHD1420BG6">VHD 1420 B
+								G6</label></li>
+						<li><input class="btn" id="rVHD1420D" type="checkbox"><label for="rVHD1420D">VHD 1420 D</label>
+						</li>
+						<li><input class="btn" id="rVHD1420DG6" type="checkbox"><label for="rVHD1420DG6">VHD 1420 D
+								G6</label></li>
+						<li><input class="btn" id="rVHD1520DG7" type="checkbox"><label for="rVHD1520DG7">VHD 1520 D
+								G7</label></li>
+						<li><input class="btn" id="rVHD1530BG7" type="checkbox"><label for="rVHD1530BG7">VHD 1530 B
+								G7</label></li>
+						<li><input class="btn" id="rVHL1010D" type="checkbox"><label for="rVHL1010D">VHL 1010 D</label>
+						</li>
+						<li><input class="btn" id="rVHL1120B" type="checkbox"><label for="rVHL1120B">VHL 1120 B</label>
+						</li>
+						<li><input class="btn" id="rVHL1120D" type="checkbox"><label for="rVHL1120D">VHL 1120 D</label>
+						</li>
+						<li><input class="btn" id="rVHL1220B" type="checkbox"><label for="rVHL1220B">VHL 1220 B</label>
+						</li>
+						<li><input class="btn" id="rVHL1220D" type="checkbox"><label for="rVHL1220D">VHL 1220 D</label>
+						</li>
+						<li><input class="btn" id="rVHC1120B" type="checkbox"><label for="rVHL1120B">VHC 1120 B</label>
+						</li>
+						<li><input class="btn" id="rVHC1120D" type="checkbox"><label for="rVHL1120D">VHC 1120 D</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="mainmenubtn">Série 3000</button>
+				<div class="dropdown-child">
+					<ul>
+						<li><input class="btn" id="rVHD3020B" type="checkbox"><label for="rVHD3020B">VHD 3020 B</label>
+						</li>
+						<li><input class="btn" id="rVHD3030B" type="checkbox"><label for="rVHD3030B">VHD 3030 B</label>
+						</li>
+						<li><input class="btn" id="rVHD3030BFullHD" type="checkbox"><label for="rVHD3030BFullHD">VHD
+								3030 B FullHD</label></li>
+						<li><input class="btn" id="rVHD3120B" type="checkbox"><label for="rVHD3120B">VHD 3120 B</label>
+						</li>
+						<li><input class="btn" id="rVHD3120D" type="checkbox"><label for="rVHD3120D">VHD 3120 D</label>
+						</li>
+						<li><input class="btn" id="rVHD3120BG2" type="checkbox"><label for="rVHD3120BG2">VHD 3120 B
+								G2</label></li>
+						<li><input class="btn" id="rVHD3120DG2" type="checkbox"><label for="rVHD3120DG2">VHD 3120 D
+								G2</label></li>
+						<li><input class="btn" id="rVHD3120BG3" type="checkbox"><label for="rVHD3120BG3">VHD 3120 B
+								G3</label></li>
+						<li><input class="btn" id="rVHD3120B28mmG3" type="checkbox"><label for="rVHD3120B28mmG3">VHD
+								3120 B 2.8mm G3</label></li>
+						<li><input class="btn" id="rVHD3120DG3" type="checkbox"><label for="rVHD3120DG3">VHD 3120 D
+								G3</label></li>
+						<li><input class="btn" id="rVHD3120BG4" type="checkbox"><label for="rVHD3120BG4">VHD 3120 B
+								G4</label></li>
+						<li><input class="btn" id="rVHD3120DG4" type="checkbox"><label for="rVHD3120DG4">VHD 3120 D
+								G4</label></li>
+						<li><input class="btn" id="rVHD3120BG5" type="checkbox"><label for="rVHD3120BG5">VHD 3120 B
+								G5</label></li>
+						<li><input class="btn" id="rVHD3120DG5" type="checkbox"><label for="rVHD3120DG5">VHD 3120 D
+								G5</label></li>
+						<li><input class="btn" id="rVHD3120BG6" type="checkbox"><label for="rVHD3120BG6">VHD 3120 B
+								G6</label></li>
+						<li><input class="btn" id="rVHD3120DG6" type="checkbox"><label for="rVHD3120DG6">VHD 3120 D
+								G6</label></li>
+						<li><input class="btn" id="rVHD3130B" type="checkbox"><label for="rVHD3130B">VHD 3130 B</label>
+						</li>
+						<li><input class="btn" id="rVHD3130BG2" type="checkbox"><label for="rVHD3130BG2">VHD 3130 B
+								G2</label></li>
+						<li><input class="btn" id="rVHD3130BG3" type="checkbox"><label for="rVHD3130BG3">VHD 3130 B
+								G3</label></li>
+						<li><input class="btn" id="rVHD3130BG4" type="checkbox"><label for="rVHD3130BG4">VHD 3130 B
+								G4</label></li>
+						<li><input class="btn" id="rVHD3130BG5" type="checkbox"><label for="rVHD3130BG5">VHD 3130 B
+								G5</label></li>
+						<li><input class="btn" id="rVHD3130BG6" type="checkbox"><label for="rVHD3130BG6">VHD 3130 B
+								G6</label></li>
+						<li><input class="btn" id="rVHD3130BG7" type="checkbox"><label for="rVHD3130BG7">VHD 3130 B
+								G7</label></li>
+						<li><input class="btn" id="rVHD3130DG7" type="checkbox"><label for="rVHD3130DG7">VHD 3130 D
+								G7</label></li>
+						<li><input class="btn" id="rVHD3130VF" type="checkbox"><label for="rVHD3130VF">VHD 3130
+								VF</label></li>
+						<li><input class="btn" id="rVHD3140VF" type="checkbox"><label for="rVHD3140VF">VHD 3140
+								VF</label></li>
+						<li><input class="btn" id="rVHD3140VFG3" type="checkbox"><label for="rVHD3140VFG3">VHD 3140 VF
+								G3</label></li>
+						<li><input class="btn" id="rVHD3140VFG4" type="checkbox"><label for="rVHD3140VFG4">VHD 3140 VF
+								G4</label></li>
+						<li><input class="btn" id="rVHD3140VFG5" type="checkbox"><label for="rVHD3140VFG5">VHD 3140 VF
+								G5</label></li>
+						<li><input class="btn" id="rVHD3140VFG6" type="checkbox"><label for="rVHD3140VFG6">VHD 3140 VF
+								G6</label></li>
+						<li><input class="btn" id="rVHD3220DFullColor" type="checkbox"><label
+								for="rVHD3220DFullColor">VHD 3220 D Fullcolor </label></li>
+						<li><input class="btn" id="rVHD3220DG3" type="checkbox"><label for="rVHD3220DG3">VHD 3220 D
+								G3</label></li>
+						<li><input class="btn" id="rVHD3220DG4" type="checkbox"><label for="rVHD3220DG4">VHD 3220 D
+								G4</label></li>
+						<li><input class="btn" id="rVHD3220DG5" type="checkbox"><label for="rVHD3220DG5">VHD 3220 D
+								G5</label></li>
+						<li><input class="btn" id="rVHD3220DG6" type="checkbox"><label for="rVHD3220DG6">VHD 3220 D
+								G6</label></li>
+						<li><input class="btn" id="rVHD3220miniD" type="checkbox"><label for="rVHD3220miniD">VHD 3220
+								mini D </label></li>
+						<li><input class="btn" id="rVHD3220DAG40" type="checkbox"><label for="rVHD3220DAG40">VHD 3220 D
+								A G4.0</label></li>
+						<li><input class="btn" id="rVHD3220DAG6" type="checkbox"><label for="rVHD3220DAG6">VHD 3220 D A
+								G6 </label></li>
+						<li><input class="btn" id="rVHD3230BG3" type="checkbox"><label for="rVHD3230BG3">VHD 3230 B
+								G3</label></li>
+						<li><input class="btn" id="rVHD3230BG4" type="checkbox"><label for="rVHD3230BG4">VHD 3230 B
+								G4</label></li>
+						<li><input class="btn" id="rVHD3230BG5" type="checkbox"><label for="rVHD3230BG5">VHD 3230 B
+								G5</label></li>
+						<li><input class="btn" id="rVHD3230BG6" type="checkbox"><label for="rVHD3230BG6">VHD 3230 B
+								G6</label></li>
+						<li><input class="btn" id="rVHD3230BG7" type="checkbox"><label for="rVHD3230BG7">VHD 3230 B
+								G7</label></li>
+						<li><input class="btn" id="rVHD3230DG7" type="checkbox"><label for="rVHD3230DG7">VHD 3230 D G7
+							</label></li>
+						<li><input class="btn" id="rVHD3230DVF" type="checkbox"><label for="rVHD3230DVF">VHD 3230 D
+								VF</label></li>
+						<li><input class="btn" id="rVHD3230DVFG3" type="checkbox"><label for="rVHD3230DVFG3">VHD 3230 D
+								VF G3</label></li>
+						<li><input class="btn" id="rVHD3230DZG5" type="checkbox"><label for="rVHD3230DZG5">VHD 3230 D Z
+								G5</label></li>
+						<li><input class="btn" id="rVHD3240FullColor" type="checkbox"><label for="rVHD3240FullColor">VHD
+								3240 Fullcolor</label></li>
+						<li><input class="btn" id="rVHD3240FullColorG6" type="checkbox"><label
+								for="rVHD3240FullColorG6">VHD 3240 Fullcolor G6</label></li>
+						<li><input class="btn" id="rVHD3240VFG4" type="checkbox"><label for="rVHD3240VFG4">VHD 3240 VF
+								G4</label></li>
+						<li><input class="btn" id="rVHD3240VFG6" type="checkbox"><label for="rVHD3240VFG6">VHD 3240 VF
+								G6</label></li>
+						<li><input class="btn" id="rVHD3240ZG5" type="checkbox"><label for="rVHD3240ZG5">VHD 3240 Z
+								G5</label></li>
+						<li><input class="btn" id="rVHD3250VFG7" type="checkbox"><label for="rVHD3250VFG7">VHD 3250 VF
+								G7</label></li>
+						<li><input class="btn" id="rVHD3420D" type="checkbox"><label for="rVHD3420D">VHD 3420 D</label>
+						</li>
+						<li><input class="btn" id="rVHD3520DG7" type="checkbox"><label for="rVHD3520DG7">VHD 3520 D
+								G7</label></li>
+						<li><input class="btn" id="rVHD3530BG7" type="checkbox"><label for="rVHD3530BG7">VHD 3530 B
+								G7</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="mainmenubtn">Série 5000</button>
+				<div class="dropdown-child">
+					<ul>
+						<li><input class="btn" id="rVHD5020D" type="checkbox"><label for="rVHD5020D">VHD 5020 D</label>
+						</li>
+						<li><input class="btn" id="rVHD5030B" type="checkbox"><label for="rVHD5030B">VHD 5030 B</label>
+						</li>
+						<li><input class="btn" id="rVHD5040VF" type="checkbox"><label for="rVHD5040VF">VHD 5040
+								VF</label></li>
+						<li><input class="btn" id="rVHD5040VFG2" type="checkbox"><label for="rVHD5040VFG2">VHD 5040 VF
+								G2</label></li>
+						<li><input class="btn" id="rVHD5230DSL" type="checkbox"><label for="rVHD5230DSL">VHD 5230 D
+								SL</label></li>
+						<li><input class="btn" id="rVHD5240BFULLCOLOR" type="checkbox"><label
+								for="rVHD5240BFULLCOLOR">VHD 5240 B FullColor</label></li>
+						<li><input class="btn" id="rVHD5240BSL" type="checkbox"><label for="rVHD5240BSL">VHD 5240 B
+								SL</label></li>
+						<li><input class="btn" id="rVHD5250Z" type="checkbox"><label for="rVHD5250Z">VHD 5250 Z</label>
+						</li>
+						<li><input class="btn" id="rVHD5820D4K" type="checkbox"><label for="rVHD5820D4K">VHD 5820 D
+								4K</label></li>
+						<li><input class="btn" id="rVHD5840B4K" type="checkbox"><label for="rVHD5840B4K">VHD 5840 B
+								4K</label></li>
+						<li><input class="btn" id="rVHD5880Z4K" type="checkbox"><label for="rVHD5880Z4K">VHD 5880 Z
+								4K</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="mainmenubtn">Série 7000</button>
+				<div class="dropdown-child">
+					<ul>
+						<li><input class="btn" id="rVHD78804K" type="checkbox"><label for="rVHD78804K">VHD 7880 Z
+								4K</label></li>
+					</ul>
+				</div>
+			</div>
+			</nav>
+		</div>
+	</aside>
+	<section id="texto">
+		<h1>Tabela comparativa Analógica</h1>
+		<table id="tabela">
+			<thead>
+				<tr>
+					<td style="width: 150px; height: 215px;"><img src="img/logo.png" alt=""></td>
+				</tr>
+				<tr>
+					<td class="titulineo1">Especificações</td>
+				</tr>
+				<tr>
+					<td style="width: 300px;">Modelo</td>
+				</tr>
+				<tr>
+					<td class="titulineo1">Especificações</td>
+				</tr>
+			</thead>
+			<tr>
+				<td>Sensor</td>
+			</tr>
+			<tr>
+				<td>Distância Focal</td>
+			</tr>
+			<tr>
+				<td>Ângulo de Visão</td>
+			</tr>
+			<tr>
+				<td>Zoom</td>
+			</tr>
+			<tr>
+				<td>Alcance de IR</td>
+			</tr>
+			<tr>
+				<td class="titulineo">Imagem</td>
+			</tr>
+			<tr>
+				<td>Resolução</td>
+			</tr>
+			<tr>
+				<td>Compensação de Luz de Fundo</td>
+			</tr>
+			<tr>
+				<td class="titulineo">Áudio</td>
+			</tr>
+			<tr>
+				<td>Interface</td>
+			</tr>
+			<tr>
+				<td class="titulineo">Geral</td>
+			</tr>
+			<tr>
+				<td>Alarme</td>
+			</tr>
+			<tr>
+				<td>Alimentação</td>
+			</tr>
+			<tr>
+				<td>Consumo</td>
+			</tr>
+			<tr>
+				<td>Temperatura</td>
+			</tr>
+			<tr>
+				<td>Ambiente Instalação</td>
+			</tr>
+			<tr>
+				<td>Grau de Proteção</td>
+			</tr>
+		</table>
+	</section>
+
+	<div id="rodape">
+		<p>Capacitação ISEC</p>
+	</div>
+
+</body>
+
+</html>

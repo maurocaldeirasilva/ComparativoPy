@@ -1,0 +1,275 @@
+﻿<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="img/isec.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../CSS/estilo-dvr.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="../JS/dvr.js"></script>
+
+	<title>Tabela Comparativa DVR</title>
+</head>
+
+<body>
+	<div id="inicio">
+		<ul id="navegacao">
+			<li class="analogica"><a href="analógica.html">Analógica</a></li>
+			<li class="vip"><a href="vip.html">VIP </a></li>
+			<li class="sd"><a href="sd.html">Speed Dome</a></li>
+			<li class="dvr"><a href="dvr.html">DVR</a></li>
+			<li class="nvr"><a href="nvr.html">NVR</a></li>
+			<li class="pb"><a href="pb.html">Power Balum</a></li>
+			<li class="mibo"><a href="mibo.html">Mibo</a></li>
+		</ul>
+	</div>
+	<div id="limpar">
+		<img class="imglimp" src="img/limp.png">
+		<div><a href="dvr.html" class="limpar">Limpar Filtros</a>
+		</div>
+	</div>
+
+	<aside>
+		<div id="inputs">
+			<div id="cabeca">
+				<a href=""></a>
+				<a href="index.html">
+					<img id="inputsimg" src="img/multihd.png">
+				</a>
+
+			</div>
+			<div class="dropdown">
+				<button class="mainmenubtn">4 Canais</button>
+				<div class="dropdown-child">
+					<ul>
+						<li><input class="btn" id="rMHDX1004" type="checkbox"><label for="rMHDX1004">MHDX 1004</label>
+						</li>
+						<li><input class="btn" id="rMHDX1004C" type="checkbox"><label for="rMHDX1004C">MHDX
+								1004-C</label></li>
+						<li><input class="btn" id="rMHDX1104" type="checkbox"><label for="rMHDX1104">MHDX 1104</label>
+						</li>
+						<li><input class="btn" id="rMHDX1204" type="checkbox"><label for="rMHDX1204">MHDX 1204</label>
+						</li>
+						<li><input class="btn" id="rMHDX3004" type="checkbox"><label for="rMHDX3004">MHDX 3004</label>
+						</li>
+						<li><input class="btn" id="riMHDX3004" type="checkbox"><label for="riMHDX3004">iMHDX
+								3004</label></li>
+						<li><input class="btn" id="rMHDX3004C" type="checkbox"><label for="rMHDX3004C">MHDX
+								3004-C</label></li>
+						<li><input class="btn" id="rMHDX3104" type="checkbox"><label for="rMHDX3104">MHDX 3104</label>
+						</li>
+						<li><input class="btn" id="rMHDX504" type="checkbox"><label for="rMHDX504">MHDX 504</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="mainmenubtn">8 Canais</button>
+				<div class="dropdown-child">
+					<ul>
+						<li><input class="btn" id="rMHDX1008" type="checkbox"><label for="rMHDX1008">MHDX 1008</label>
+						</li>
+						<li><input class="btn" id="rMHDX1008C" type="checkbox"><label for="rMHDX1008">MHDX
+								1008-C</label></li>
+						<li><input class="btn" id="rMHDX1108" type="checkbox"><label for="rMHDX1108">MHDX 1108</label>
+						</li>
+						<li><input class="btn" id="rMHDX1208" type="checkbox"><label for="rMHDX1208">MHDX 1208</label>
+						</li>
+						<li><input class="btn" id="rMHDX3008" type="checkbox"><label for="rMHDX3008">MHDX 3008</label>
+						</li>
+						<li><input class="btn" id="rMHDX3008C" type="checkbox"><label for="rMHDX3008">MHDX
+								3008-C</label></li>
+						<li><input class="btn" id="riMHDX3008" type="checkbox"><label for="riMHDX3008">iMHDX
+								3008</label></li>
+						<li><input class="btn" id="rMHDX3108" type="checkbox"><label for="rMHDX3108">MHDX 3108</label>
+						</li>
+						<li><input class="btn" id="MHDX508" type="checkbox"><label for="MHDX508">MHDX 508</label></li>
+						<li><input class="btn" id="riMHDX5008" type="checkbox"><label for="riMHDX5008">iMHDX
+								5008</label></li>
+						<li><input class="btn" id="rMHDX5108" type="checkbox"><label for="rMHDX5108">MHDX 5108</label>
+						</li>
+						<li><input class="btn" id="rMHDX5208" type="checkbox"><label for="rMHDX5208">MHDX 5208</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="mainmenubtn">16 Canais</button>
+				<div class="dropdown-child">
+					<ul>
+						<li><input class="btn" id="rMHDX1016" type="checkbox"><label for="rMHDX1016">MHDX 1016</label>
+						</li>
+						<li><input class="btn" id="rMHDX1016C" type="checkbox"><label for="rMHDX1016C">MHDX
+								1016-C</label></li>
+						<li><input class="btn" id="rMHDX1116" type="checkbox"><label for="rMHDX1116">MHDX 1116</label>
+						</li>
+						<li><input class="btn" id="rMHDX1216" type="checkbox"><label for="rMHDX1216">MHDX 1216</label>
+						</li>
+						<li><input class="btn" id="rMHDX3016" type="checkbox"><label for="rMHDX3016">MHDX 3016</label>
+						</li>
+						<li><input class="btn" id="rMHDX3016C" type="checkbox"><label for="rMHDX3016C">MHDX 3016
+								C</label></li>
+						<li><input class="btn" id="riMHDX3016" type="checkbox"><label for="riMHDX3016">iMHDX
+								3016</label></li>
+						<li><input class="btn" id="rMHDX3116" type="checkbox"><label for="rMHDX3116">MHDX 3116</label>
+						</li>
+						<li><input class="btn" id="rMHDX3116C" type="checkbox"><label for="rMHDX3116C">MHDX 3116
+								C</label></li>
+						<li><input class="btn" id="riMHDX3116" type="checkbox"><label for="riMHDX3116">iMHDX
+								3116</label></li>
+						<li><input class="btn" id="rMHDX5116" type="checkbox"><label for="rMHDX5116">MHDX 5116</label>
+						</li>
+						<li><input class="btn" id="rMHDX5216" type="checkbox"><label for="rMHDX5216">MHDX 5216</label>
+						</li>
+						<li><input class="btn" id="rMHDX7116" type="checkbox"><label for="rMHDX7116">MHDX 7116</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="mainmenubtn">32 Canais</button>
+				<div class="dropdown-child">
+					<ul>
+						<li><input class="btn" id="rMHDX1032" type="checkbox"><label for="rMHDX1032">MHDX 1032</label>
+						</li>
+						<li><input class="btn" id="rMHDX1132" type="checkbox"><label for="rMHDX1132">MHDX 1132</label>
+						</li>
+						<li><input class="btn" id="rMHDX1232" type="checkbox"><label for="rMHDX1232">MHDX 1232</label>
+						</li>
+						<li><input class="btn" id="rMHDX3132" type="checkbox"><label for="rMHDX3132">MHDX 3132</label>
+						</li>
+						<li><input class="btn" id="riMHDX3032" type="checkbox"><label for="riMHDX3032">iMHDX
+								3032</label></li>
+						<li><input class="btn" id="riMHDX3132" type="checkbox"><label for="riMHDX3132">iMHDX
+								3132</label></li>
+						<li><input class="btn" id="rMHDX7132" type="checkbox"><label for="rMHDX7132">MHDX 7132</label>
+						</li>
+						<li><input class="btn" id="riMHDX7032" type="checkbox"><label for="riMHDX7032">iMHDX
+								7032</label></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</aside>
+	<section id="texto">
+		<h1>Tabela Comparativa DVR</h1>
+		<table id="tabela">
+			<thead>
+				<tr>
+					<td style="width: 300px; height: 180px;"><img src="img/logo.png" alt=""></td>
+				</tr>
+				<tr>
+					<td class="titulineo1">Especificações</td>
+				</tr>
+				<tr>
+					<td style="width: 300px;">Modelo</td>
+				</tr>
+				<tr>
+					<td class="titulineo1">Especificações</td>
+				</tr>
+			</thead>
+			<tr>
+				<td>Canais</td>
+			</tr>
+			<tr>
+				<td>IP's Adicionais</td>
+			</tr>
+			<tr>
+				<td>Modo NVR</td>
+			</tr>
+			<tr>
+				<td>IVS</td>
+			</tr>
+			<tr>
+				<td class="titulineo">Imagem</td>
+			</tr>
+			<tr>
+				<td>Compressão</td>
+			</tr>
+			<tr>
+				<td>Resolução Visualização</td>
+			</tr>
+			<tr>
+				<td>Resolução Gravação</td>
+			</tr>
+			<tr>
+				<td>Tela Adicional</td>
+			</tr>
+			<tr>
+				<td>Saída de Vídeo</Video></td>
+			</tr>
+			<tr>
+				<td>IVS</td>
+			</tr>
+			<tr>
+				<td class="titulineo">Áudio</td>
+			</tr>
+			<tr>
+				<td>Interface</td>
+			</tr>
+			<tr>
+				<td class="titulineo">Rede</td>
+			</tr>
+			<tr>
+				<td>Interface</td>
+			</tr>
+			<tr>
+				<td>DDNS</td>
+			</tr>
+			<tr>
+				<td>RTMP</td>
+			</tr>
+			<tr>
+				<td>FTP</td>
+			</tr>
+			<tr>
+				<td>SNMP</td>
+			</tr>
+			<tr>
+				<td>Throughput</td>
+			</tr>
+			<tr>
+				<td>Conexões / Abertura de Canais</td>
+			</tr>
+			<tr>
+				<td>Comp. Adpt. Wireless</td>
+			</tr>
+			<tr>
+				<td class="titulineo">Geral</td>
+			</tr>
+			<tr>
+				<td>Quant. HD's</td>
+			</tr>
+			<tr>
+				<td>Capacidade HD</td>
+			</tr>
+			<tr>
+				<td>Recuperação de Senha</td>
+			</tr>
+			<tr>
+				<td>Alarme</td>
+			</tr>
+			<tr>
+				<td>Alimentação</td>
+			</tr>
+			<tr>
+				<td>Consumo (Sem HD)</td>
+			</tr>
+
+		</table>
+	</section>
+
+	<div id="rodape">
+		<p>Capacitação ISEC</p>
+	</div>
+
+
+</body>
+
+</html>
