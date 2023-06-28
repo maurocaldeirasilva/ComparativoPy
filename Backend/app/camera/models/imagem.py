@@ -20,3 +20,4 @@ class Imagem(models.Model):
     starlight = models.CharField(max_length=100, blank=True, null=True, verbose_name=_('Starlight'))
     sensor = models.CharField(max_length=100, blank=True, null=True, verbose_name=_('Sensor'))
     ang_visao = models.CharField(max_length=100, blank=True, null=True, verbose_name=_('Angulo de Visão'))
+    starlight = models.CharField(max_length=100, blank=True, null=True, verbose_name=_('Starlight'))

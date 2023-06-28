@@ -14,3 +14,4 @@ class Geral(models.Model):
     ambiente_instalação = models.CharField(max_length=100, blank=True, null=True, verbose_name=_('Ambiente de Instalação'))
     grau_proteção = models.CharField(max_length=100, blank=True, null=True, verbose_name=_('Grau de Proteção'))
     arma_cartao_sd = models.CharField(max_length=100, blank=True, null=True, verbose_name=_('Armazenamento Cartão SD'))
+    audio = models.CharField(max_length=100, blank=True, null=True, verbose_name=_('Áudio'))
