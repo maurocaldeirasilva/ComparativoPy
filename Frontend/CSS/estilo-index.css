@@ -13,6 +13,15 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
+h1 {
+  color: white;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
 .conteiner {
   text-align: center;
   background-color: #000000;
@@ -21,9 +30,9 @@
   padding-top: 15px;
 }
 
-h1 {
-  color: white;
-  text-align: center;
+.navegação{
+  height: 50px;
+  width: 100%;
 }
 
 .menu {
@@ -36,7 +45,7 @@ h1 {
 }
 
 .botao2 .submenu{
-  padding-left: 45px ;
+  padding-left: 48px ;
 }
 
 .submenu {
@@ -73,7 +82,7 @@ h1 {
   background: #000000;
 }
 
-#titulo {
+.titulo {
   margin-left: 200px;
   margin-right: 200px;
   border-radius: 10px;
@@ -88,9 +97,7 @@ h1 {
   list-style: none;
   width: 100%;
   background: #000000;
-  min-width: 720px;
   display: block;
-  flex-wrap: nowrap;
 }
 
 #inicio ul li {
@@ -138,8 +145,97 @@ h1 {
 #pesquisa {
   margin-top: 350px;
   width: 100%;
-  height: 345px;
+  height: 312px;
   border: 1px solid #000000;
+}
+
+.selection {
+  background-color: #00a335;
+  border-radius: 15px;
+  color: #000000;
+  margin-left: 50px;
+  margin-top: 10px;
+  float: left;
+}
+
+.selection ul {
+  text-align: left;
+  padding: 1em;
+  float: left;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type="checkbox"] {
+    font-family: Nunito2;
+    --active: #00a335 !important;
+    --active-inner: #fff;
+    --focus: 1.5px rgba(39, 94, 254, 0.3);
+    --border: #bbc1e1;
+    --border-hover: #00a335;
+    --background: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 21px;
+    width: 38px;
+    border-radius: 11px;
+    outline: none !important;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+  }
+
+  input[type="checkbox"]:after {
+    font-family: Nunito2;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
+      opacity var(--d-o, 0.2s);
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: var(--ab, #00a335);
+    transform: translateX(var(--x, 0));
+  }
+
+  input[type="checkbox"]:checked {
+    font-family: Nunito2;
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: 0.3s;
+    --d-t: 0.6s;
+    --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    --ab: var(--active-inner);
+    --x: 17px;
+  }
+
+  input[type="checkbox"]:hover:not(:checked):not(:disabled) {
+    font-family: Nunito2;
+    --bc: var(--border-hover);
+  }
+
+  input[type="checkbox"]:focus {
+    font-family: Nunito2;
+    box-shadow: 0 0 0 var(--focus);
+  }
+
+  input[type="checkbox"] + label {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    display: inline-block;
+    vertical-align: top;
+    color: #000000;
+    cursor: pointer;
+    margin-left: 10px;
+  }
 }
 
 #rodape {
