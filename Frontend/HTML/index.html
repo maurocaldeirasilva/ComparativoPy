@@ -49,7 +49,7 @@
 			</ul>
 		</div>
 
-		<div id="image-index">
+		<!--<div id="image-index">
 			<div class="cftv-image">
 				<div class="menu">
 					<div class="botao">
@@ -88,56 +88,131 @@
 					<img src="img/mibo.png" style="border-radius: 15px; width: 120%; height: 120%;">
 				</a>
 			</div>
-		</div>
+		</div>-->
 
 		<div id="pesquisa"> <!--Pesquisa Beta-->
 			<div class="titulo">
 				<h2>Pesquisa</h2>
 			</div>
-			<div class="selection">
-				<ul>
-					<li>
-						<input type="checkbox" id="meuCheckbox" name="DVR" value="DVR">
-						<label for="meuCheckbox">DVR</label>
-					</li>
-					<li>
-						<input type="checkbox" id="meuCheckbox" name="NVR" value="NVR">
-						<label for="meuCheckbox">NVR</label>
-					</li>
-					<li>
-						<input type="checkbox" id="meuCheckbox" name="IP" value="Câmera IP">
-						<label for="meuCheckbox">Câmera IP</label>
-					</li>
-					<li>
-						<input type="checkbox" id="meuCheckbox" name="Analogica" value="Analógica">
-						<label for="meuCheckbox">Analógica</label>
-					</li>
-				</ul>
-			</div>
-			<div class="selection">
-				<ul>
-					<li>
-						<input type="checkbox" id="meuCheckbox" name="audio" value="Áudio">
-						<label for="meuCheckbox">Áudio</label>
-					</li>
-					<li>
-						<input type="checkbox" id="meuCheckbox" name="NVR" value="NVR">
-						<label for="meuCheckbox">NVR</label>
-					</li>
-					<li>
-						<input type="checkbox" id="meuCheckbox" name="IP" value="Câmera IP">
-						<label for="meuCheckbox">Câmera IP</label>
-					</li>
-					<li>
-						<input type="checkbox" id="meuCheckbox" name="Analogica" value="Analógica">
-						<label for="meuCheckbox">Analógica</label>
-					</li>
-				</ul>
+			<div id="pesquisabox">
+				<div class="selection">
+					<ul id="product">
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="DVR" value="DVR">
+							<label for="meuCheckbox">DVR</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="NVR" value="NVR">
+							<label for="meuCheckbox">NVR</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="IP" value="Câmera IP">
+							<label for="meuCheckbox">Câmera IP</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="Analogica" value="Analógica">
+							<label for="meuCheckbox">Analógica</label>
+						</li>
+					</ul>
+				</div>
+				<div class="selection">
+					<ul id="cameras">
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="audio" value="Áudio">
+							<label for="meuCheckbox">Áudio</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="audioBi" value="Áudio Bidirecional">
+							<label for="meuCheckbox">Áudio Bidirecional</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="detecInteligente" value="Detecção Inteligente">
+							<label for="meuCheckbox">Detecção Inteligente</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="reconhecimentoFacial" value="Reconhecimento Facial">
+							<label for="meuCheckbox">Reconhecimento Facial</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="detecFace" value="Detecção de face">
+							<label for="meuCheckbox">Detecção de Face</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="linhaCerca" value="Linha / Cerca">
+							<label for="meuCheckbox">Linha / Cerca</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="zoom" value="Zoom">
+							<label for="meuCheckbox">Zoom</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="vf" value="Varifocal">
+							<label for="meuCheckbox">Varifocal</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="calor" value="Mapa de Calor">
+							<label for="meuCheckbox">Mapa de Calor</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="lpr" value="LPR">
+							<label for="meuCheckbox">LPR</label>
+						</li>
+					</ul>
+				</div>
+				<div class="selection">
+					<ul id="chanels">
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="canais" value="4">
+							<label for="meuCheckbox">4</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="canais" value="8">
+							<label for="meuCheckbox">8</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="canais" value="16">
+							<label for="meuCheckbox">16</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="canais" value="32">
+							<label for="meuCheckbox">32</label>
+						</li>
+					</ul>
+				</div>
+				<div class="selection">
+					<ul id="recorder">
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="reconhecimentoFacial" value="Reconhecimento Facial">
+							<label for="meuCheckbox">Reconhecimento Facial</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="linhaCerca" value="Linha / Cerca">
+							<label for="meuCheckbox">Linha / Cerca</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="calor" value="Mapa de Calor">
+							<label for="meuCheckbox">Mapa de Calor</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="lpr" value="LPR">
+							<label for="meuCheckbox">LPR</label>
+						</li>
+						<li>
+							<input type="checkbox" id="meuCheckbox" name="contPessoas" value="Contagem de Pessoas">
+							<label for="meuCheckbox">Contagem de Pessoas</label>
+						</li>
+					</ul>
+				</div>
+				<div id="resultado">
+					<h2>Resultado da Pesquisa</h2>
+				</div>
 			</div>
 		</div>
 
 		<div id="rodape">
-			<p>Capacitação ISEC</p>
+			<div id="bar">
+				<p>Capacitação ISEC</p>
+			</div>
 		</div>
 	</div>
 
