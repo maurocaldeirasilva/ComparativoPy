@@ -153,13 +153,71 @@ li {
   margin-left: 8%;
 }
 
-.selection {
+#product{
   background-color: #00a335;
   border-radius: 10px;
   color: #000000;
   margin-left: 50px;
   margin-top: 10px;
   float: left;
+  padding-top: 1px;
+}
+
+#product h2{
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+}
+
+#cameras{
+  background-color: #00a335;
+  border-radius: 10px;
+  color: #000000;
+  margin-left: 50px;
+  margin-top: 10px;
+  float: left;
+  padding-top: 1px;
+  display: none;
+}
+
+#cameras h2{
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+}
+
+#channels {
+  background-color: #00a335;
+  border-radius: 10px;
+  color: #000000;
+  margin-left: 50px;
+  margin-top: 10px;
+  float: left;
+  padding-top: 1px;
+  display: none;
+}
+
+#channels h2{
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+}
+
+#recorder{
+  background-color: #00a335;
+  border-radius: 10px;
+  color: #000000;
+  margin-left: 50px;
+  margin-top: 10px;
+  float: left;
+  padding-top: 1px;
+  display: none;
+}
+
+#recorder h2{
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
 }
 
 .selection ul {

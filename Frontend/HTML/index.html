@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="../JS/index.js"></script>
 
 	<title>Tabela Comparativa CFTV/IP</title>
 
@@ -48,7 +49,7 @@
 				</div>
 			</ul>
 		</div>
-
+		
 		<!--<div id="image-index">
 			<div class="cftv-image">
 				<div class="menu">
@@ -95,113 +96,125 @@
 				<h2>Pesquisa</h2>
 			</div>
 			<div id="pesquisabox">
-				<div class="selection">
-					<ul id="product">
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="DVR" value="DVR">
-							<label for="meuCheckbox">DVR</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="NVR" value="NVR">
-							<label for="meuCheckbox">NVR</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="IP" value="Câmera IP">
-							<label for="meuCheckbox">Câmera IP</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="Analogica" value="Analógica">
-							<label for="meuCheckbox">Analógica</label>
-						</li>
-					</ul>
+				<div id="product">
+					<div class="selection">
+						<ul>
+						<h2>Produtos</h2>
+							<li>
+								<input type="checkbox" id="dvr" name="DVR" value="DVR">
+								<label for="dvr">DVR</label>
+							</li>
+							<li>
+								<input type="checkbox" id="nvr" name="NVR" value="NVR">
+								<label for="nvr">NVR</label>
+							</li>
+							<li>
+								<input type="checkbox" id="ip" name="IP" value="Câmera IP">
+								<label for="ip">Câmera IP</label>
+							</li>
+							<li>
+								<input type="checkbox" id="analogica" name="Analogica" value="Analógica">
+								<label for="analogica">Analógica</label>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="selection">
-					<ul id="cameras">
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="audio" value="Áudio">
-							<label for="meuCheckbox">Áudio</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="audioBi" value="Áudio Bidirecional">
-							<label for="meuCheckbox">Áudio Bidirecional</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="detecInteligente" value="Detecção Inteligente">
-							<label for="meuCheckbox">Detecção Inteligente</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="reconhecimentoFacial" value="Reconhecimento Facial">
-							<label for="meuCheckbox">Reconhecimento Facial</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="detecFace" value="Detecção de face">
-							<label for="meuCheckbox">Detecção de Face</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="linhaCerca" value="Linha / Cerca">
-							<label for="meuCheckbox">Linha / Cerca</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="zoom" value="Zoom">
-							<label for="meuCheckbox">Zoom</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="vf" value="Varifocal">
-							<label for="meuCheckbox">Varifocal</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="calor" value="Mapa de Calor">
-							<label for="meuCheckbox">Mapa de Calor</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="lpr" value="LPR">
-							<label for="meuCheckbox">LPR</label>
-						</li>
-					</ul>
+				<div id="cameras">
+					<div class="selection">
+						<ul>
+						<h2>IVS Câmeras</h2>
+							<li>
+								<input type="checkbox" id="audio" name="audio" value="Áudio">
+								<label for="audio">Áudio</label>
+							</li>
+							<li>
+								<input type="checkbox" id="audiobi" name="audioBi" value="Áudio Bidirecional">
+								<label for="audiobi">Áudio Bidirecional</label>
+							</li>
+							<li>
+								<input type="checkbox" id="detecintel" name="detecInteligente" value="Detecção Inteligente">
+								<label for="detecintel">Detecção Inteligente</label>
+							</li>
+							<li>
+								<input type="checkbox" id="recfacial" name="reconhecimentoFacial" value="Reconhecimento Facial">
+								<label for="recfacial">Reconhecimento Facial</label>
+							</li>
+							<li>
+								<input type="checkbox" id="detcface" name="detecFace" value="Detecção de face">
+								<label for="detcface">Detecção de Face</label>
+							</li>
+							<li>
+								<input type="checkbox" id="linhacerca" name="linhaCerca" value="Linha / Cerca">
+								<label for="linhacerca">Linha / Cerca</label>
+							</li>
+							<li>
+								<input type="checkbox" id="zoom" name="zoom" value="Zoom">
+								<label for="zoom">Zoom</label>
+							</li>
+							<li>
+								<input type="checkbox" id="varifocal" name="vf" value="Varifocal">
+								<label for="varifocal">Varifocal</label>
+							</li>
+							<li>
+								<input type="checkbox" id="mapcalor" name="calor" value="Mapa de Calor">
+								<label for="mapcalor">Mapa de Calor</label>
+							</li>
+							<li>
+								<input type="checkbox" id="leituraplaca" name="lpr" value="LPR">
+								<label for="leituraplaca">LPR</label>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="selection">
-					<ul id="chanels">
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="canais" value="4">
-							<label for="meuCheckbox">4</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="canais" value="8">
-							<label for="meuCheckbox">8</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="canais" value="16">
-							<label for="meuCheckbox">16</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="canais" value="32">
-							<label for="meuCheckbox">32</label>
-						</li>
-					</ul>
+				<div id="channels">
+					<div class="selection">
+						<ul>
+						<h2>Canais</h2>
+							<li>
+								<input type="checkbox" id="four" name="canais" value="4">
+								<label for="four">4</label>
+							</li>
+							<li>
+								<input type="checkbox" id="eight" name="canais" value="8">
+								<label for="eight">8</label>
+							</li>
+							<li>
+								<input type="checkbox" id="sixteen" name="canais" value="16">
+								<label for="sixteen">16</label>
+							</li>
+							<li>
+								<input type="checkbox" id="thirtytwo" name="canais" value="32">
+								<label for="thirtytwo">32</label>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="selection">
-					<ul id="recorder">
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="reconhecimentoFacial" value="Reconhecimento Facial">
-							<label for="meuCheckbox">Reconhecimento Facial</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="linhaCerca" value="Linha / Cerca">
-							<label for="meuCheckbox">Linha / Cerca</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="calor" value="Mapa de Calor">
-							<label for="meuCheckbox">Mapa de Calor</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="lpr" value="LPR">
-							<label for="meuCheckbox">LPR</label>
-						</li>
-						<li>
-							<input type="checkbox" id="meuCheckbox" name="contPessoas" value="Contagem de Pessoas">
-							<label for="meuCheckbox">Contagem de Pessoas</label>
-						</li>
-					</ul>
+				<div id="recorder">
+					<div class="selection">
+						<ul>
+						<h2>IVS Gravadores</h2>
+							<li>
+								<input type="checkbox" id="reconhecimentofacial" name="reconhecimentoFacial" value="Reconhecimento Facial">
+								<label for="reconhecimentofacial">Reconhecimento Facial</label>
+							</li>
+							<li>
+								<input type="checkbox" id="line" name="linhaCerca" value="Linha / Cerca">
+								<label for="line">Linha / Cerca</label>
+							</li>
+							<li>
+								<input type="checkbox" id="mapacalor" name="calor" value="Mapa de Calor">
+								<label for="mapacalor">Mapa de Calor</label>
+							</li>
+							<li>
+								<input type="checkbox" id="leideplaca" name="lpr" value="LPR">
+								<label for="leideplaca">LPR</label>
+							</li>
+							<li>
+								<input type="checkbox" id="contagempessoas" name="contPessoas" value="Contagem de Pessoas">
+								<label for="contagempessoas">Contagem de Pessoas</label>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<div id="resultado">
 					<h2>Resultado da Pesquisa</h2>
