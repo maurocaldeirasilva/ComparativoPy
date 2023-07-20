@@ -35,6 +35,12 @@ li {
   width: 100%;
 }
 
+.search a{
+  border: 1px solid #00a335;
+  border-radius: 5px;
+  margin: 7px;
+}
+
 .menu {
   position: relative;
   display: inline-block;

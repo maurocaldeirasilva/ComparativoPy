@@ -1,7 +1,6 @@
 // Product
 
-var ip = document.getElementById("ip");
-var analogico = document.getElementById("analogico");
+
 
 // Cameras
 var audio = document.getElementById("audio");
@@ -23,7 +22,7 @@ var mapacalor = document.getElementById("mapacalor");
 var leideplaca = document.getElementById("leideplaca");
 var contagempessoas = document.getElementById("contagempessoas");
 
-//NVR / DVR
+//Product
 function exibirChannels() {
     var dvr = document.getElementById("dvr");
     var nvr = document.getElementById("nvr");
@@ -48,3 +47,72 @@ function exibirRecorder() {
         recorder.style.display = "none";
     }
 }
+
+function exibirCameras() {
+    var ip = document.getElementById("ip");
+    var analogica = document.getElementById("analogica");
+    var cameras = document.getElementById("cameras");
+    if (ip.checked || analogica.checked) {
+        cameras.style.display = "block";
+    }else{
+        cameras.style.display = "none";
+    }
+}
+
+function validarProdutos() {
+    var checkboxes = document.getElementsByName("produtos");
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            checkboxes[i].checked = true;
+        } else {
+            checkboxes[i].checked = false;
+        }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Adicione também as chamadas das funções existentes para os eventos de mudança das caixas de seleção.
+    document.getElementById("dvr").addEventListener("change", function() {
+        exibirChannels();
+        exibirRecorder();
+    });
+
+    document.getElementById("nvr").addEventListener("change", function() {
+        exibirChannels();
+        exibirRecorder();
+    });
+
+    document.getElementById("four").addEventListener("change", function() {
+        exibirChannels();
+        exibirRecorder();
+    });
+
+    document.getElementById("eight").addEventListener("change", function() {
+        exibirChannels();
+        exibirRecorder();
+    });
+
+    document.getElementById("sixteen").addEventListener("change", function() {
+        exibirChannels();
+        exibirRecorder();
+    });
+
+    document.getElementById("thirtytwo").addEventListener("change", function() {
+        exibirChannels();
+        exibirRecorder();
+    });
+
+    document.getElementById("ip").addEventListener("change", function() {
+        exibirCameras();
+    });
+
+    document.getElementById("analogica").addEventListener("change", function() {
+        exibirCameras();
+    });
+
+    document.getElementById("dvr").addEventListener("click", validarProdutos);
+    document.getElementById("nvr").addEventListener("click", validarProdutos);
+    document.getElementById("ip").addEventListener("click", validarProdutos);
+    document.getElementById("analogica").addEventListener("click", validarProdutos);
+});
+
