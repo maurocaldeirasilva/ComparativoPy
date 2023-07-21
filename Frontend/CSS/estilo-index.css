@@ -175,7 +175,7 @@ li {
   text-align: center;
 }
 
-#cameras{
+#camerasip{
   background-color: #00a335;
   border-radius: 10px;
   color: #000000;
@@ -186,7 +186,24 @@ li {
   display: none;
 }
 
-#cameras h2{
+#camerasip h2{
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+}
+
+#camerasanalogica{
+  background-color: #00a335;
+  border-radius: 10px;
+  color: #000000;
+  margin-left: 50px;
+  margin-top: 10px;
+  float: left;
+  padding-top: 1px;
+  display: none;
+}
+
+#camerasanalogica h2{
   font-size: 18px;
   color: #000000;
   text-align: center;

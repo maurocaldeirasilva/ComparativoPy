@@ -48,14 +48,23 @@ function exibirRecorder() {
     }
 }
 
-function exibirCameras() {
+function exibirCamerasIP() {
     var ip = document.getElementById("ip");
-    var analogica = document.getElementById("analogica");
-    var cameras = document.getElementById("cameras");
+    var camerasip = document.getElementById("camerasip");
     if (ip.checked || analogica.checked) {
-        cameras.style.display = "block";
+        camerasip.style.display = "block";
     }else{
-        cameras.style.display = "none";
+        camerasip.style.display = "none";
+    }
+}
+
+function exibirCamerasAnalogic() {
+    var analogica = document.getElementById("analogica");
+    var camerasanalogica = document.getElementById("camerasanalogica");
+    if (ip.checked || analogica.checked) {
+        camerasanalogica.style.display = "block";
+    }else{
+        camerasanalogica.style.display = "none";
     }
 }
 
@@ -103,16 +112,24 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.getElementById("ip").addEventListener("change", function() {
-        exibirCameras();
+        exibirCamerasIP();
     });
 
     document.getElementById("analogica").addEventListener("change", function() {
-        exibirCameras();
+        exibirCamerasAnalogic();
     });
 
-    document.getElementById("dvr").addEventListener("click", validarProdutos);
-    document.getElementById("nvr").addEventListener("click", validarProdutos);
-    document.getElementById("ip").addEventListener("click", validarProdutos);
-    document.getElementById("analogica").addEventListener("click", validarProdutos);
+    document.getElementById("dvr").addEventListener("click", function() {
+        validarProdutos()
+    });
+    document.getElementById("nvr").addEventListener("click", function(){
+        validarProdutos();
+    });
+    document.getElementById("ip").addEventListener("click", function() {
+        validarProdutos()
+    });    
+    document.getElementById("analogica").addEventListener("click", function() {
+        validarProdutos()
+    });
 });
 
