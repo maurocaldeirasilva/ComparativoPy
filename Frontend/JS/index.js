@@ -68,19 +68,21 @@ function exibirCamerasAnalogic() {
     }
 }
 
-function validarProdutos() {
+function toggleCheckboxState() {
     var checkboxes = document.getElementsByName("produtos");
+
     for (var i = 0; i < checkboxes.length; i++) {
-        if (checkboxes[i].checked) {
-            checkboxes[i].checked = true;
-        } else {
-            checkboxes[i].checked = false;
-        }
+        checkboxes[i].checked = !checkboxes[i].checked; // Toggle the checked state
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+
+/*document.addEventListener("DOMContentLoaded", function() {
     // Adicione também as chamadas das funções existentes para os eventos de mudança das caixas de seleção.
+    document.getElementsByID("produtos").forEach(function(element) {
+        toggleCheckboxState();
+    });
+
     document.getElementById("dvr").addEventListener("change", function() {
         exibirChannels();
         exibirRecorder();
@@ -130,6 +132,62 @@ document.addEventListener("DOMContentLoaded", function() {
     });    
     document.getElementById("analogica").addEventListener("click", function() {
         validarProdutos()
+    });
+});*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("dvr").addEventListener("change", function() {
+        exibirChannels();
+        exibirRecorder();
+    });
+
+    document.getElementById("nvr").addEventListener("change", function() {
+        exibirChannels();
+        exibirRecorder();
+    });
+
+    document.getElementById("four").addEventListener("change", function() {
+        exibirChannels();
+        exibirRecorder();
+    });
+
+    document.getElementById("eight").addEventListener("change", function() {
+        exibirChannels();
+        exibirRecorder();
+    });
+
+    document.getElementById("sixteen").addEventListener("change", function() {
+        exibirChannels();
+        exibirRecorder();
+    });
+
+    document.getElementById("thirtytwo").addEventListener("change", function() {
+        exibirChannels();
+        exibirRecorder();
+    });
+
+    document.getElementById("ip").addEventListener("change", function() {
+        exibirCamerasIP();
+    });
+
+    document.getElementById("analogica").addEventListener("change", function() {
+        exibirCamerasAnalogic();
+    });
+
+    document.getElementById("dvr").addEventListener("click", function() {
+        toggleCheckboxState();
+    });
+    
+    document.getElementById("nvr").addEventListener("click", function(){
+        toggleCheckboxState();
+    });
+    
+    document.getElementById("ip").addEventListener("click", function() {
+        toggleCheckboxState();
+    });    
+    
+    document.getElementById("analogica").addEventListener("click", function() {
+        toggleCheckboxState();
     });
 });
 
